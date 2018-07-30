@@ -1,0 +1,23 @@
+{
+  "name": "lit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectunic0rn/LitApi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projectunic0rn/LitApi/issues"
+  },
+  "homepage": "https://github.com/projectunic0rn/LitApi#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
