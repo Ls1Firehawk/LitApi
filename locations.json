@@ -1,45 +1,9 @@
 [
    {
-      "geometry":{
-         "location":{
-            "lat":45.4316109,
-            "lng":-75.7329484
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4328978802915,
-               "lng":-75.7316267197085
-            },
-            "southwest":{
-               "lat":45.4301999197085,
-               "lng":-75.73432468029151
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
-      "id":"555937ed58783c9ba232a33174d75624ae5bcb2e",
       "name":"Le Pied de Cochon",
       "opening_hours":{
          "open_now":false
       },
-      "photos":[
-         {
-            "height":2340,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/106123981582636180385/photos\">Sophie Mayo</a>"
-            ],
-            "photo_reference":"CmRaAAAAW_YGqqxWX6xY8rXik1Wo8G_iAKwaFxI6oQO7PRc56Q3DDT4QMxo_Npd1S6ZSL_RBjh_0VhTAtkMU_djLEeoQLPwKgLIw2ASYTQz5FhtWmxW9fg7b_a2uhDliAxx-cf7UEhAuu3yBivF5q-t_ZeaeUzHhGhQaZHBmbTnf8yMxnCPv1MwL3SBQVg",
-            "width":4160
-         }
-      ],
-      "place_id":"ChIJrSmngIYEzkwRrZLpTRcjsgo",
-      "plus_code":{
-         "compound_code":"C7J8+JR Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7J8+JR"
-      },
-      "rating":4.1,
-      "reference":"CmRRAAAAnEMosfuVDp35NyVmmLy9qRbIrCL8qpMN7fXoFktjDzYVPhcKxaP60yXX5zLS498_oUsKwNnoHPbvER6zpHPLdO8gcGs6x8PTeRHRh7y7tc8sFsdej94_wnVlhjwpKxp9EhCbtE6hYjpwUS9KTg8KIB2QGhS-HPcCa0TwG9hNq3DAQhTpeJAvGg",
-      "scope":"GOOGLE",
       "types":[
          "restaurant",
          "bar",
@@ -47,49 +11,15 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"248 Rue Montcalm, Gatineau"
+      "lat":45.4316109,
+      "lng":-75.7329484,
+      "litness":0.9518387897502569
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4268987,
-            "lng":-75.7161335
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.42825413029149,
-               "lng":-75.7148624197085
-            },
-            "southwest":{
-               "lat":45.4255561697085,
-               "lng":-75.71756038029152
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"aa1aea430fc128d0b7c07e39d0720da3f277e29a",
       "name":"Aux quatre jeudis – Café Bar",
       "opening_hours":{
          "open_now":false
       },
-      "photos":[
-         {
-            "height":2704,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/105223477065270795251/photos\">Michel-Antoine Renaud</a>"
-            ],
-            "photo_reference":"CmRaAAAAszT6eNmsWR95Q6OqSf_FBBjvjDNsmJak_WNc0Y-cRJistBKXvy9735_LcYOdeXcjONo1tSM0aczmW6-SkQFGo5-mBvLf8XFgCa_BFSNwWA9ORKohKSW0Hc7gz4KeHhbnEhB1J8E_GVLNTr5i35fa2Pk8GhSHhaMxysA8tvchBgt858M64AT5Ug",
-            "width":4056
-         }
-      ],
-      "place_id":"ChIJwZIcB_UEzkwR6QKKZCMFwCE",
-      "plus_code":{
-         "compound_code":"C7GM+QG Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7GM+QG"
-      },
-      "rating":4.1,
-      "reference":"CmRRAAAAYyv0YWBpxIh-sg7Dj1qeqiqbExu8UbDCSanKoDkQpF8C6chXrLGBCwkYGCsrVP3v6lvfDB4EABThLijv0PxhHm_cSqUbq-lLMBlSe9vEoML1qHfJK0LZlqWYWnkV7rqAEhAOI4xNn8LnXeVH20Tzl0qbGhSLpGxJDDMacdWfdD4is7vAsqYEFw",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "cafe",
@@ -98,49 +28,15 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"44 Rue Laval, Gatineau"
+      "lat":45.4268987,
+      "lng":-75.7161335,
+      "litness":0.5858637927763168
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.41968199999999,
-            "lng":-75.712687
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4206115302915,
-               "lng":-75.71100791970849
-            },
-            "southwest":{
-               "lat":45.4179135697085,
-               "lng":-75.7137058802915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
-      "id":"49c46c3ff4bc0cd9e7d8f33c919c3a1e18296249",
       "name":"Mill St. Brew Pub",
       "opening_hours":{
          "open_now":true
       },
-      "photos":[
-         {
-            "height":2268,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/106448438881651240297/photos\">Dominic Roussel</a>"
-            ],
-            "photo_reference":"CmRaAAAAHaa9RPUcxg-q0TsgL1S5LKUzFPaqOi3-FgaIEgY9BdBzgFFzz9hnXAJKGs7Hp_Jx1lN5_dse9FIwzdz1vq2Avs6rP0yLeUk6zjiNZzvlGRdn5BL5AlpBoxF7cU9KFasmEhCNPV7g7FuZvmwbjDJeqeMbGhT9v_JBzfPQxpV3gB7mFq3TXFzX8g",
-            "width":4032
-         }
-      ],
-      "place_id":"ChIJn4MvQ1AEzkwRdo2vuno6UQA",
-      "plus_code":{
-         "compound_code":"C79P+VW LeBreton Flats, Ottawa, ON, Canada",
-         "global_code":"87Q6C79P+VW"
-      },
-      "rating":4.1,
-      "reference":"ClRQAAAAq_g_f3jJ93AY1zPMbnvdn2-rm2-bJxkHk0y5ORs83Pbv8PdyJSeAcePQcDzm0-v-l5t5re1Lia8j4WPff-iXSjW55MDz_AtImoetyY-KNmgSECDQOT1hw-1sIMOyLfLo5FEaFPaAq6fPwty2Vp2lpHesnYCr9BcH",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "restaurant",
@@ -148,49 +44,15 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"555 Wellington Street, Ottawa"
+      "lat":45.41968199999999,
+      "lng":-75.712687,
+      "litness":0.13698154382340055
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4297502,
-            "lng":-75.7268567
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4310138302915,
-               "lng":-75.7255526697085
-            },
-            "southwest":{
-               "lat":45.4283158697085,
-               "lng":-75.72825063029151
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
-      "id":"5cb357f34e0301e26cba2973f28bd831d23537b0",
       "name":"BDT",
       "opening_hours":{
          "open_now":true
       },
-      "photos":[
-         {
-            "height":1536,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/115751171466878393792/photos\">Natacha Gervais-Perron</a>"
-            ],
-            "photo_reference":"CmRaAAAA76b5vQ1DqNsMACg_FqawIW3ISWf63g3BZPY5Q9y6oTG5o28mVex7vC_RpNIJEG5rd8V-J7n96E5QYNtWE-OcFH5tFSo2veDptwnm7L2-Y8gyekY_TSErN72OWXbXd9B3EhBQb1FQ472aDHOtMsxw_Pn6GhRecB6J9ATZJBK_0qOVQ8QnZX3GfQ",
-            "width":2056
-         }
-      ],
-      "place_id":"ChIJwWZVGIkEzkwRq0gzJUop-G8",
-      "plus_code":{
-         "compound_code":"C7HF+W7 Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7HF+W7"
-      },
-      "rating":4.3,
-      "reference":"CmRRAAAApqS8ociS3PybH9WDZSnaDtBXjeC5f5ZKnMUDzLvoTX3_5CbermXWOcXM3uKuxKRMPJN3UL6uAVuhZk5vy37yWLBWNhxJFaGHM81o4FmBlGk60Khay9nY-ayLSyK1wpSnEhA_zlf58KXmCTyeTBz83WN1GhSVb4q827g8S6NlWMOkJQilIGlJAg",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "restaurant",
@@ -198,49 +60,15 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"170 Rue Montcalm, Gatineau"
+      "lat":45.4297502,
+      "lng":-75.7268567,
+      "litness":0.18961198313994876
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4268618,
-            "lng":-75.7164575
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4282042802915,
-               "lng":-75.7150297197085
-            },
-            "southwest":{
-               "lat":45.4255063197085,
-               "lng":-75.7177276802915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
-      "id":"869b4c398937287f03a2644f1547c8d996c73b64",
       "name":"Le Troquet",
       "opening_hours":{
          "open_now":true
       },
-      "photos":[
-         {
-            "height":2448,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/107517084456204870056/photos\">Luna Akeyna</a>"
-            ],
-            "photo_reference":"CmRaAAAAnMUbGp1PidjXrgBUyusxMCeVTnjb6Vq7obozcteJPE4g9EgdzEz8JMtRJ4UArSWhTtJ6TR8yQLzKMrB-qbTCFeF4aOPHSYCCksAtRH6fM25ej-xKCNQPGifYGwT4Sv4REhDNEGwXjIr1s7bam6o3pUrbGhQ8gPoF6Shg0wCGcL23YymsS0aqPQ",
-            "width":3264
-         }
-      ],
-      "place_id":"ChIJTV7fG_UEzkwRdfAu0tkkaeA",
-      "plus_code":{
-         "compound_code":"C7GM+PC Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7GM+PC"
-      },
-      "rating":4.1,
-      "reference":"CmRSAAAA53W5a5FIL6r18YMwzKI32c63cSFpOECn2yJVVroFuEmOIq7bSOoLA76n9AWVZoElNRXA9z5SEDZtYcS_ufIRwSCYOsFJbVx6w5DpwqEWi2WOohAY72zVtcXRp4S8e6CgEhBfGgrfi5T6_b_U1B-xs6_-GhRH_2iPg5SEoDaO31UtEkZSIS20aQ",
-      "scope":"GOOGLE",
       "types":[
          "restaurant",
          "cafe",
@@ -249,49 +77,15 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"41 Rue Laval, Gatineau"
+      "lat":45.4268618,
+      "lng":-75.7164575,
+      "litness":0.888827836086018
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.436657,
-            "lng":-75.733235
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4380013802915,
-               "lng":-75.7317850697085
-            },
-            "southwest":{
-               "lat":45.4353034197085,
-               "lng":-75.7344830302915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"1631bb975415c885cac6288155a36b847ffd27d7",
       "name":"Le Fou Du Roi",
       "opening_hours":{
          "open_now":true
       },
-      "photos":[
-         {
-            "height":1836,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/110249570038182415847/photos\">Sylvie Guilbault</a>"
-            ],
-            "photo_reference":"CmRaAAAAuCRBEkrneuoKGx5VrbfSEwlgUuUkh9ZUlT8smbAbKs7gA0124R1uSjX-4OlfiAwN1KYMv1vrLi3_w6hQfe_xFKSfQAd8PsV9eraD-ewOQIy79AtkH-6vCxfBYTxHKBlCEhDSeKqE8Ucjg82ChS2W2xSjGhT2twmeN4HDIrafFVOQfwavG0JVKg",
-            "width":3264
-         }
-      ],
-      "place_id":"ChIJw5-RrIQEzkwREcBmejYVxWI",
-      "plus_code":{
-         "compound_code":"C7P8+MP Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7P8+MP"
-      },
-      "rating":3.4,
-      "reference":"CmRRAAAAWn7hoEv8-qcVt8gSiLAtoaSWJGAd-iPNRWRGhb2Bjxtip1xzyQiVrNtkn3Z-2TGnuTJtQJJ_uT3ZblMhXexHzjzyU5-uDADF0_5eQgSNyLruUHMvD4CC6QiUCP4NvzVHEhCtJEkD391r9GGN295tMsohGhTW20CVZsbkzTxibAAywHQEYJUspg",
-      "scope":"GOOGLE",
       "types":[
          "night_club",
          "bar",
@@ -300,242 +94,72 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"253 Boulevard Saint-Joseph, Gatineau"
+      "lat":45.436657,
+      "lng":-75.733235,
+      "litness":0.6629281003665206
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4249067,
-            "lng":-75.7191399
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4263150802915,
-               "lng":-75.7177985697085
-            },
-            "southwest":{
-               "lat":45.4236171197085,
-               "lng":-75.72049653029151
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"9473d1661f83eb04bc31304e15ce6f07119c4af1",
       "name":"Le Petit Chicago",
       "opening_hours":{
          "open_now":false
       },
-      "photos":[
-         {
-            "height":4032,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/111153171469949537249/photos\">Darrin Newman</a>"
-            ],
-            "photo_reference":"CmRaAAAApJqrvHQY1zwZvznOsmE-bXP6trqPGNYIMTGcZrYi6W8UBCEbakwhsiOBYr736TTEXyK26BAPmlvVr3prTyTto_U-Q25YjtOBnxyOyi_vwS_jBFjF8127X0K9Ou0MfsniEhCohlEVP0OGIY82IaZOEa3yGhSKArKdiBcGABlg5rsZLvefCmH-mQ",
-            "width":3024
-         }
-      ],
-      "place_id":"ChIJhzrY818EzkwR8vppTrOvSqg",
-      "plus_code":{
-         "compound_code":"C7FJ+X8 Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7FJ+X8"
-      },
-      "rating":4.4,
-      "reference":"CmRSAAAAqE2CljZ6egTYZgz35fiJrcIITgduYoAVk2iGs0kRoQOVTp5pUO5M1F864wIF6rNu8LVXmn2N_gLtwo44mK542V8qB_nBgzJq5sNy8s60drr5zyWLaEO20gugaKeYgfnrEhCiG0iJtaRdZh8qQ80HXVc_GhRoOEJeIjVlTYaIeZlAFQUJuz2mhQ",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"50 Promenade du Portage, Gatineau"
+      "lat":45.4249067,
+      "lng":-75.7191399,
+      "litness":0.44804160916883506
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4270348,
-            "lng":-75.7160876
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.42839183029151,
-               "lng":-75.7148272197085
-            },
-            "southwest":{
-               "lat":45.42569386970851,
-               "lng":-75.7175251802915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"9e135a364d375a6758c11ce83c5318d4910b9350",
       "name":"Ou Quoi",
       "opening_hours":{
-         "open_now":false
+         "open_now":true
       },
-      "photos":[
-         {
-            "height":3096,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/116789243517887521199/photos\">Olivier vibeau</a>"
-            ],
-            "photo_reference":"CmRaAAAAtJ3IpFRXam7jn3SgjmPny-c3BG4WEpkSarKvGIW24HD7UOQoaxBmuKuNi7q1pgWjoTe-7z6FoSmjnI_iKpLvum4ULsz_kSLQhwjQDZdbG_Pi4Ect_th-ZP0wYGtq8LtDEhAp_wZfB461IveTocelBY7MGhR5PF6_8HPN1-DJbGYVjWNQ_gy2-g",
-            "width":4128
-         }
-      ],
-      "place_id":"ChIJ1WVIB_UEzkwR0BLIaMchknQ",
-      "plus_code":{
-         "compound_code":"C7GM+RH Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7GM+RH"
-      },
-      "rating":4.5,
-      "reference":"CmRRAAAAnV-EmRb_CUa2QnZe3qs1EXkl01VS2MzrLp-zSbjeYu1cqTXscCZBt9QkoI6g7EWcQS0LiZrltdMkjVxaMd9-giuGjiKGDMdDqv-KBsnASaoWmYIrQFqqy0EJRVUM8tPeEhBXVwDz4wUgMoMsnf6YcIrZGhT5ND7F6rj37bLtkvoraSosOT0uqg",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "night_club",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"48 Rue Laval, Gatineau"
+      "lat":45.4270348,
+      "lng":-75.7160876,
+      "litness":0.9417918795375322
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.428345,
-            "lng":-75.719961
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4296914302915,
-               "lng":-75.7186666697085
-            },
-            "southwest":{
-               "lat":45.4269934697085,
-               "lng":-75.7213646302915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"5da4b9a7a8800b440f2000a0b7457dc0c8e460aa",
       "name":"Bistro l'Original Bar",
       "opening_hours":{
          "open_now":true
       },
-      "photos":[
-         {
-            "height":1600,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/102635874707288347007/photos\">Andre Raymond</a>"
-            ],
-            "photo_reference":"CmRaAAAAscA5xmRrKtQ9Tm2zw2SoaPvy4zv4-6ND0SzCDTGlmTTxJNPhfH4CQaUiq4Hdze9fYloEW_Kzvk_FvsH1u_A7duqRlih2jA0NcX0BAQgvnAnXGFevKdE_genYyohxqPKGEhAxTKQ8Oj2K8xFjmCjWJXi_GhSuiJx_Wu8Eu2niRT5uNPWvReELbQ",
-            "width":1200
-         }
-      ],
-      "place_id":"ChIJWXAFI4sEzkwRAyu7aCdM7gQ",
-      "plus_code":{
-         "compound_code":"C7HJ+82 Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7HJ+82"
-      },
-      "rating":3.6,
-      "reference":"CmRRAAAALrydwCPN1x90opXD9KnjJKx8IXAN_n1HuD4eiFbziQMV4x8TkvEgho-HbSsIiLlJoroFEx6xatEFlNU1sP90CA00SnKTlgQKNqyf7yIVJFly7DjpxuEcdicDzXVFKyiwEhCwdmEqA6pRlDecybLU8-0gGhQU5QBXsYjRStrtwe-Ty6e1mQh7iw",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"104 Rue Eddy, Gatineau"
+      "lat":45.428345,
+      "lng":-75.719961,
+      "litness":0.5876037048236917
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.426981,
-            "lng":-75.716521
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4283200802915,
-               "lng":-75.7150520197085
-            },
-            "southwest":{
-               "lat":45.4256221197085,
-               "lng":-75.71774998029152
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"785c258b5aa15281b909bb6a1f194e57a86f3331",
       "name":"Pêle-Mêle",
       "opening_hours":{
-         "open_now":false
+         "open_now":true
       },
-      "photos":[
-         {
-            "height":1080,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/116332385129024290061/photos\">Eric Martel</a>"
-            ],
-            "photo_reference":"CmRaAAAA8HqIXwNImAf1mfM2qkJzBqLg7sPUQwgaWVNSUET5dxCY16G6avHiG6969JfiFZY37cJ8te0nMa-aB0qvhchrDFzFWhZQ1lT8OjD7gyuFz1tyNbWk9IEmfl3McmWLpSUwEhDC0rDoqakx7KJxAtUOfS6hGhRUO16Xypa_yzDqM6CVzXhQbLpylg",
-            "width":1920
-         }
-      ],
-      "place_id":"ChIJzWnjBvUEzkwRu90Eq9WivAU",
-      "plus_code":{
-         "compound_code":"C7GM+Q9 Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7GM+Q9"
-      },
-      "rating":4,
-      "reference":"CmRRAAAARPumD_RYAhWF1ynIh3HC7QEQzOhNDi9eWyy_otEQREctBbcDHEW120DHfxkXDa4x2Go-vV8McKe1p9DkA7IbLhId5_qiIuYc3EhhRWqNhbTwhR3D5xMq7ct7Zu9JDiPVEhAJz0oMXQmpBiqZsago5y0bGhQzggkZlfqzzVgPq49Y7b5yrP4D8g",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"47 Rue Laval, Gatineau"
+      "lat":45.426981,
+      "lng":-75.716521,
+      "litness":0.757092818023186
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4267044,
-            "lng":-75.716203
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4280583302915,
-               "lng":-75.71491371970849
-            },
-            "southwest":{
-               "lat":45.4253603697085,
-               "lng":-75.7176116802915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
-      "id":"11d0d8348fb3f4f6c8ba5f03b9d3034937b3f372",
       "name":"Piz'za-za – restau bar à vin",
       "opening_hours":{
-         "open_now":false
+         "open_now":true
       },
-      "photos":[
-         {
-            "height":1000,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/115911220184170802305/photos\">Piz&#39;za-za – restau bar à vin</a>"
-            ],
-            "photo_reference":"CmRaAAAAjpuEtbJBzH9aL5Mvtj5S0HW4TbujvDMXEzRqYDIINJ72TTRxzAHxf41mX-R5nFdGHWO4iPDvLGTWJAqcakfsZtTplsAvKXrtYMy0Iw61ynxW6GubvO-Z4hyUXKWfwsMpEhDF_FEuWMOzVhIOnD2WfsuNGhSMwWJvFuO1yiQaAi7VnDSTnH6Msg",
-            "width":1500
-         }
-      ],
-      "place_id":"ChIJxfQdCPUEzkwRB6T1nrSP9m0",
-      "plus_code":{
-         "compound_code":"C7GM+MG Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7GM+MG"
-      },
-      "rating":4.2,
-      "reference":"CmRRAAAAngh__JwP0E1BUBNB2BQ7Ww-0uSEg5XEEuxGH164tRz4Igk3IgWRMFXTNTRXw0K8L31brFFvDte99wTUUMP8yZBGpEaBkjw9s9IubKZjyfMYUcQnCIDvr5KlpoR4KHzNVEhBifAx2uBn-sDjMOw3AsPQQGhRxfLMKuo2mWbDiV4XP6YxH1h8now",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "restaurant",
@@ -543,98 +167,30 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"36 Rue Laval, Gatineau"
+      "lat":45.4267044,
+      "lng":-75.716203,
+      "litness":0.05811043061265475
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4275726,
-            "lng":-75.724541
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4289019802915,
-               "lng":-75.72325626970849
-            },
-            "southwest":{
-               "lat":45.4262040197085,
-               "lng":-75.7259542302915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"00a1497601fa4cfa60b6432041dc263a6c29f4b2",
       "name":"Soif Bar à vin",
       "opening_hours":{
          "open_now":false
       },
-      "photos":[
-         {
-            "height":854,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/108716750069188791194/photos\">Soif Bar à vin</a>"
-            ],
-            "photo_reference":"CmRaAAAARgcVbcosZIy_iNvJsvNtTFiE2-JryeHa_I6UAJa-8jmeclAlotvi25svyyKTGdekwXsFO8CmjaVM5lJY2obXRMkPbKHEzs1VCXbS9SXpABA4oPFkPGboJ2nSnDbDSudYEhCxGM0cwtb05fyqNXX9m0m6GhRoMFu__6OxJnUeFaS53_k-RBzeyg",
-            "width":1280
-         }
-      ],
-      "place_id":"ChIJRf1HO4oEzkwRZuUPlIv4GNg",
-      "plus_code":{
-         "compound_code":"C7HG+25 Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7HG+25"
-      },
-      "rating":4.6,
-      "reference":"CmRSAAAAbSAODINCAEQOS_34ZVDXjudA8ArGtnFBZ0wHcCWUnDpVMuvbUORbPmCBDsPLBudLvSYtk3R8b5yWnfd5KWwqU5cpO7gqgbv_UPZ_x-lgWKlfnWykb9850PbN9AwN23VpEhB0zQorYg6oVx80zSLrutcCGhQ-oM4Hu_dGhA3ZL9upH_ZzBbNnqg",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "food",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"88 Rue Montcalm, Gatineau"
+      "lat":45.4275726,
+      "lng":-75.724541,
+      "litness":0.3112621279565706
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.42942499999999,
-            "lng":-75.7258429
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.43070188029149,
-               "lng":-75.72455636970848
-            },
-            "southwest":{
-               "lat":45.42800391970849,
-               "lng":-75.7272543302915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
-      "id":"f27cb200ad5831678b2d486a1954ed90dafbde1f",
       "name":"Petit Peru Resto",
       "opening_hours":{
          "open_now":true
       },
-      "photos":[
-         {
-            "height":3024,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/115227766195867054459/photos\">L&#39; Barouf</a>"
-            ],
-            "photo_reference":"CmRaAAAAKvZk4d_rA7Kxx_FwGC9e-vtMQTbtEIgcd0yP3ljwAjVzlOu_2_J1Cca02mHjyAJAt3g01RrwPbwzpg-SWxHhHg-brAKxS454slsKwvr_KjD6gfsE-DJKWKLIyAOUZuJ9EhAuDWwl8r3m7RQNiiBtCv-bGhQaM91Hjbe2-Cpyip0zWMR4NCRT7A",
-            "width":4032
-         }
-      ],
-      "place_id":"ChIJT3EMS0kEzkwRmzxwhjHBLsI",
-      "plus_code":{
-         "compound_code":"C7HF+QM Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7HF+QM"
-      },
-      "rating":4.3,
-      "reference":"CmRSAAAAfkllk4wxRUY1kEU-ZdW7Qge2ssl5yUd-5-If9fo-hNqLNCOCvs1XL-XmiQxF6_baxAs0-SiAURSYeHMk59fIclzb2qkDa_iGfefwlpxLtBIPzAQmInfdWCHMsQavK3GbEhDLk3RZgRlUDAH8yfgxR049GhQ-tlqpIzOUh2ZbZc3sMoK3iU74gA",
-      "scope":"GOOGLE",
       "types":[
          "meal_delivery",
          "bar",
@@ -643,86 +199,29 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"152 Rue Montcalm, Gatineau"
+      "lat":45.42942499999999,
+      "lng":-75.7258429,
+      "litness":0.7665547692152013
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4249598,
-            "lng":-75.71824409999999
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4263685802915,
-               "lng":-75.71690811970849
-            },
-            "southwest":{
-               "lat":45.4236706197085,
-               "lng":-75.7196060802915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"272bdbe86556330c196664b0fa2bf91c25aeb3aa",
       "name":"Le petit Chicago",
       "opening_hours":{
          "open_now":false
       },
-      "place_id":"ChIJn_AZi18EzkwRkPWtVymba5k",
-      "plus_code":{
-         "compound_code":"C7FJ+XP Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7FJ+XP"
-      },
-      "reference":"CmRSAAAApZySgksfmUTfSspAIzwRppa6uoMCB_MMD5vlMNmUZ8OJS6VXdoN8PMBhYysSRSN3rUglGSkGI_eTt6onfkBSfvx1nlkfq49BJGIIL1uqqvM29k-fL1dQaWGRQYBZ9sJmEhA5z8KT_acRnPVnQsTd_ij-GhR4zdClGAs97dIz8uBIcew2KvVf1g",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"70 Promenade du Portage, Gatineau"
+      "lat":45.4249598,
+      "lng":-75.71824409999999,
+      "litness":0.40256369885953824
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.424957,
-            "lng":-75.71810789999999
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4263749302915,
-               "lng":-75.71677846970849
-            },
-            "southwest":{
-               "lat":45.4236769697085,
-               "lng":-75.71947643029151
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
-      "id":"6819e24a11b3c6bae1eaaac5d0dcf2de0ca4f9b4",
       "name":"Bistro Épicure Restaurant",
       "opening_hours":{
          "open_now":false
       },
-      "photos":[
-         {
-            "height":601,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/108764538604191940023/photos\">Bistro Épicure Restaurant</a>"
-            ],
-            "photo_reference":"CmRaAAAA0pUzXMDsrhgoViG74f_D3OkFsyCSmfViDH8QpPCS3XfxJHQP9l46H9eW5AGmFu26a6d-ErGR8wTct3fZoibJgNcPINs3aeumEzTmdPzJOK0LLetdbGQCWVahCSTHSkQhEhD3ImBNGN7uTLwLTYnXRCziGhSBHZgjfvDU4U-y-oiEKYcBnug_uw",
-            "width":900
-         }
-      ],
-      "place_id":"ChIJ1YAfiV8EzkwR_hdaoKrNPjk",
-      "plus_code":{
-         "compound_code":"C7FJ+XQ Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7FJ+XQ"
-      },
-      "rating":4.2,
-      "reference":"CmRRAAAA_raL77mdmsyrzdN674OFkot5wd6DpXNiDauF8iwki2XPZNvLms_40aRfpnSyKOsl-Tdf5-OyYqzy5rhfaiz5UjEgN4hrYh63VTc61CPbhHLjCQWX3OFSsTwvUrmDT_d_EhArH-8fwGGPFtaISNNJJnWSGhTPMTRbdjy05c-i1ztGKFeQbEYQpA",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "restaurant",
@@ -730,94 +229,26 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"80 Promenade du Portage, Gatineau"
+      "lat":45.424957,
+      "lng":-75.71810789999999,
+      "litness":0.9427020462188633
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4269278,
-            "lng":-75.7151092
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.42819653029149,
-               "lng":-75.7136493197085
-            },
-            "southwest":{
-               "lat":45.42549856970849,
-               "lng":-75.7163472802915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"4ccfe259b10f4c948b7ccec2aa5fcf85db50d973",
       "name":"Chez Henri",
-      "photos":[
-         {
-            "height":1159,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/114152833819555445227/photos\">Pierre Séguin</a>"
-            ],
-            "photo_reference":"CmRaAAAArnrly9keZo2x80rV6K6NOK2aylDMmNe4RNIJ226GGvJtSVpuAd3Mr8ts5wHrKTOSPKydM-AFrQ0TdSjrplrOaGK50q348jd72NrDoIyzvHpIirC7r6ouHN3X1pH8-v4kEhBzf21Ug80j5AzVXFXSO50JGhRToV5ulcDeOvE0PYLcH8Rdj0SiGw",
-            "width":1444
-         }
-      ],
-      "place_id":"ChIJx__PtvUEzkwRfdRn2lbCBwE",
-      "plus_code":{
-         "compound_code":"C7GM+QX Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7GM+QX"
-      },
-      "rating":4,
-      "reference":"CmRRAAAAtcjQhWQAURMUfNFlgA78dbBN5DVmRYO49K-EUih22Ft-c9Hu7GqSc6VVV1aKKWb4ng1CbcuihrJRsZG94Mvfe-DC3LP2k67C01CHuHE0d_cE2hsurC4mQY9wsA2Erp8QEhBSbuoiCyeFHzaKQiXKHhu0GhRIc8VNKUieGAXbTq9KJ__RMWGztw",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"179 Promenade du Portage, Gatineau"
+      "lat":45.4269278,
+      "lng":-75.7151092,
+      "litness":0.9093631047427397
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4269431,
-            "lng":-75.71501049999999
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.42822518029149,
-               "lng":-75.71356906970848
-            },
-            "southwest":{
-               "lat":45.4255272197085,
-               "lng":-75.71626703029149
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"4d4fb71b57a92e266bf1ee6b1abbd69aeb00bf09",
       "name":"Boston Pizza",
       "opening_hours":{
          "open_now":true
       },
-      "photos":[
-         {
-            "height":1511,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/110578331584094662989/photos\">Boston Pizza</a>"
-            ],
-            "photo_reference":"CmRaAAAALugFX_BiJz4UKy54xDtw_fE6xpn5JCQzF_U-wBsE5sLrADpjiwxacInHkGMs4iRQfMzsM96Z8e56umGDSv-FGt-7bHDPSEW1hCZ3q8Jyb3n7HgzBbbfJ9cuMFiSh3vXcEhDoMvyPsFqoDfvi3Hwl49eXGhQdXCDfQX2whKt2fsky89cpAU6tnw",
-            "width":2048
-         }
-      ],
-      "place_id":"ChIJFcIYB_UEzkwRk5PWkQM1Sv0",
-      "plus_code":{
-         "compound_code":"C7GM+QX Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7GM+QX"
-      },
-      "rating":3.3,
-      "reference":"CmRSAAAASMMytdj9n0TEFNs1jkkt9sptOxcqn5Cn0JiV8Ttr8Qwx4rVDqExeprTLW8M-UsSgGglICxwcyO2jxVvMmUakZKrMuRu8DRUu9UQ5eMebhAgCUQbggFe3FQZpalWPBiSpEhCETWorNrLnRTYwUN0Xc2h2GhQuYxIKaa5IJBJpCFTE_b-Pry9QWQ",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "restaurant",
@@ -825,49 +256,15 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"179 Promenade du Portage, Gatineau"
+      "lat":45.4269431,
+      "lng":-75.71501049999999,
+      "litness":0.9081065583529897
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.4401404,
-            "lng":-75.7285094
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4416275802915,
-               "lng":-75.72717206970849
-            },
-            "southwest":{
-               "lat":45.4389296197085,
-               "lng":-75.72987003029151
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
-      "id":"cdefa7f07767a31adc6fdfbd68a176aaa2f213ab",
       "name":"Houston Avenue Bar & Grill - Gatineau",
       "opening_hours":{
-         "open_now":false
+         "open_now":true
       },
-      "photos":[
-         {
-            "height":1080,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/108044021885983866003/photos\">Sylvain Perrier</a>"
-            ],
-            "photo_reference":"CmRaAAAALs2LKZvQmwH9Uc-Kr1aMmWsr5Loaq0PZ25BeO180b7iVlqhAjTop4A99IYKeGgY8c2NEghDoBTzv1GnPkucxlwx0tT8ASth-BcawwSmwGqW5ej1ZMFt0-bF0V0RDRriuEhDk7uI-xZFB46TE6De9hHoRGhTWBhNdF9PAH5wVocYS7m_CEgwjLg",
-            "width":1920
-         }
-      ],
-      "place_id":"ChIJm3eXMpoEzkwRzN_kr4pUp0E",
-      "plus_code":{
-         "compound_code":"C7RC+3H Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7RC+3H"
-      },
-      "rating":3.8,
-      "reference":"CmRRAAAASXnUMQak-J5pQfJNHaXBPHAM1qQ4kEgnMcPX2DdMME4RB_QG2oBsETwKslDmKJac5W2Ig-yiPujmXs2ZPUuSJftnz4sign6gzA_75mpDS7Y4FWOrupt42AbPKibFH8OIEhAnyMB-vOzCzYP08wP9yr9NGhSPIwohVOOkjj7Lych4F2yRJCNnlA",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "restaurant",
@@ -875,103 +272,37 @@
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"7 Boulevard Montclair, Gatineau"
+      "lat":45.4401404,
+      "lng":-75.7285094,
+      "litness":0.6290393349246326
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.427108,
-            "lng":-75.71565
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.4284519802915,
-               "lng":-75.71423591970849
-            },
-            "southwest":{
-               "lat":45.4257540197085,
-               "lng":-75.7169338802915
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
-      "id":"328098976dcffc8f0bc2351d508551290bb82528",
       "name":"Minotaure",
       "opening_hours":{
          "open_now":false
       },
-      "photos":[
-         {
-            "height":2268,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/117139211989548379168/photos\">Daniel Laprise</a>"
-            ],
-            "photo_reference":"CmRaAAAAzVWRZGMZLIgAwn-FcshOLvcVVfvMr8XOr2dp48UrVyQ4XRWkuGCrYwVOoqD35-bzuHypawM9TeHn5qVRNtyP2c14W9xp_WtisHK008ZuRloi0Q7mg8GUIm-G-YknZ7eQEhDpUcPg5ixctHemZhZlZ3nqGhRejKIeDjAUT0Ftspn1dDbg8xHFog",
-            "width":4032
-         }
-      ],
-      "place_id":"ChIJK6mXVvQEzkwRjbkNp_lmbUk",
-      "plus_code":{
-         "compound_code":"C7GM+RP Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7GM+RP"
-      },
-      "rating":4.5,
-      "reference":"CmRRAAAAC5sue6_LmLJyLGHPzLiWBpWrr19_UUPcSR7fTChORBdA5Kb5W6ZFf-CQZTFxvtpdENro-9ZQzA8dhznH0YqmbVeqTbI6fEMwSC1L5ZS7MGeiCzV2VRCtwgYHbaaLeReiEhBBiFmM5eSQcVGhN4sksnzWGhQ9wZMyrHQxkPKae0hiGj4QSeDtHA",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"3 Rue Kent, Gatineau"
+      "lat":45.427108,
+      "lng":-75.71565,
+      "litness":0.5267202829442974
    },
    {
-      "geometry":{
-         "location":{
-            "lat":45.43096970000001,
-            "lng":-75.73224549999999
-         },
-         "viewport":{
-            "northeast":{
-               "lat":45.43242763029151,
-               "lng":-75.73082601970849
-            },
-            "southwest":{
-               "lat":45.42972966970851,
-               "lng":-75.73352398029151
-            }
-         }
-      },
-      "icon":"https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
-      "id":"0ae68835ee891168f1151ae123fbb162bcf54ab1",
       "name":"Taverne Montcalm",
       "opening_hours":{
          "open_now":true
       },
-      "photos":[
-         {
-            "height":3200,
-            "html_attributions":[
-               "<a href=\"https://maps.google.com/maps/contrib/114485282753102373339/photos\">Christian Moreau</a>"
-            ],
-            "photo_reference":"CmRaAAAAYLnTiR10eoZmVdb65vjIoNoOJ8AsdiUT0VXqb7Pfe5uNQ7CM1oedFx3M5Eu5mUDrzCS3YTxfeJplyPUA4iT9Ujs08MOj25XLaS06LfBobg8YLNDK-h3vD-mBz-jSM6C3EhA592nXFkR0FjJSqhRnsbULGhS4V0WJOD2yO8FU1uXb4sha1MaQSA",
-            "width":2400
-         }
-      ],
-      "place_id":"ChIJR7zNb4YEzkwRi7yKQpvVltU",
-      "plus_code":{
-         "compound_code":"C7J9+94 Gatineau, Quebec, Canada",
-         "global_code":"87Q6C7J9+94"
-      },
-      "rating":4.5,
-      "reference":"CmRSAAAAi7UAWwByPlDC8p29J9T8QR7osSOCWFUYuCYC3dWE8ToeUSnIKF0vs2mYpnoQGd_c1xPsQSYEccdbXoMGEKwmTFyKl6-nL87RwGiUz8YG71ko9qHna_r9Onj_yIXC9t4DEhDDFKtHcTLhql8JDiz__ezMGhS7Aotv_7VmdVLZ-MZKrvile3oiCQ",
-      "scope":"GOOGLE",
       "types":[
          "bar",
          "food",
          "point_of_interest",
          "establishment"
       ],
-      "vicinity":"225 Rue Montcalm, Gatineau"
+      "lat":45.43096970000001,
+      "lng":-75.73224549999999,
+      "litness":0.04478834207265514
    }
 ]

@@ -22,7 +22,6 @@ routes(app)
 //localhost:8081/getvenues/45.428087&-75.722224&1500&0
 
 
-
 server.listen(process.env.PORT || 8081,function(){
   console.log('Listening on '+server.address().port);
   

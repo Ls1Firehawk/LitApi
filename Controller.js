@@ -1,6 +1,6 @@
 exports.get_venues = function (req,res) {
 	googleapi_getvenues(req.params.x, req.params.y, req.params.radius, req.params.other, function (apiresult) {
-		res.json(apiresult)
+		res.json(cleanjson(apiresult))
 	})
 }
 
@@ -28,3 +28,15 @@ var googleapi_getvenues = function(x, y, radius, other,callback){
     console.log("Got error: " + e.message);
   });
 };
+
+var cleanjson = function(rawjson) {
+  output = []
+  rawjson.forEach((elem)=>{
+    output.push({"name": elem.name,  
+    "opening_hours": elem.opening_hours,  
+    "types" : elem.types,
+    "lat" : elem.geometry.location.lat,  
+    "lng" : elem.geometry.location.lng,
+    "litness" : Math.random() })})
+  return output  
+}
