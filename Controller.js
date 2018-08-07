@@ -5,7 +5,7 @@ exports.get_venues = function (req,res) {
 }
 
 var googleapi_getvenues = function(x, y, radius, other,callback){
-  var key = "AIzaSyDzGb0ipu2cgIoWt_C4rUx-rQjqZsjQnhU"
+  var key = " AIzaSyBJTrxaNedUOfEo4DAg51f9TZ6wIKe-JGM "
   var location = x + "," + y
   var types = "bar";
   //bar, casino, night_club, restaurant
