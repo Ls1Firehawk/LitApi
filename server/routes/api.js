@@ -10,7 +10,7 @@ router.get('/getvenues/:x&:y&:radius&:other', function(req,res) {
 })
 
 var googleapi_getvenues = function(x, y, radius, other,callback){
-  var key = " AIzaSyBJTrxaNedUOfEo4DAg51f9TZ6wIKe-JGM "
+  var key = ""
   var location = x + "," + y
   var types = "bar";
   //bar, casino, night_club, restaurant
