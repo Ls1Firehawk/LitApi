@@ -1,8 +1,13 @@
-exports.get_venues = function (req,res) {
+
+
+var express = require('express')
+var router = express.Router();
+
+router.get('/getvenues/:x&:y&:radius&:other', function(req,res) {
 	googleapi_getvenues(req.params.x, req.params.y, req.params.radius, req.params.other, function (apiresult) {
-		res.json(cleanjson(apiresult))
+		res.status(200).json(cleanjson(apiresult))
 	})
-}
+})
 
 var googleapi_getvenues = function(x, y, radius, other,callback){
   var key = " AIzaSyBJTrxaNedUOfEo4DAg51f9TZ6wIKe-JGM "
@@ -39,4 +44,7 @@ var cleanjson = function(rawjson) {
     "lng" : elem.geometry.location.lng,
     "litness" : Math.random() })})
   return output  
-}
+  }
+
+
+module.exports = router;
