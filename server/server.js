@@ -10,14 +10,11 @@ var auth_route = require('./routes/auth');
 var api_route = require('./routes/api');
 
 // Retrieve
-var MongoClient = require('mongodb').MongoClient;
 
 // Connect to the db
-MongoClient.connect("mongodb://localhost:27017/authtest", function(err, db) {
-  if(!err) {
-    console.log("We are connected");
-  }
-});
+mongoose.connect("mongodb://localhost:27017/authtest")
+var db = mongoose.connection;
+
 
 const app = new Express();
 
@@ -31,7 +28,7 @@ app.use(expressValidator());
 
 app.use('/auth', auth_route);
 app.use('/api', api_route);
-app.use('*', function(req,res){
+app.use('/test/register', function(req,res){
 	res.send("<form action='/auth/local/register' method='post'>" +
 		"<input type='text' name='email' value='jonannana@email.com'>" +
 		"<input type='text' name='username' value='usertest'>" +
@@ -40,6 +37,13 @@ app.use('*', function(req,res){
 		"<input type='submit' value='submit'>" +
 		"</form>");
 })
+app.use('/test/login', function(req,res){
+	res.send("<form action='/auth/local/login' method='post'>" +
+		"<input type='text' name='username' value='usertest1'>" +
+		"<input type='password' name='password' value='passwordtest'>" +
+		"<input type='submit' value='submit'>"
+		)
+});
 
 app.listen(8081, function(){
   console.log("Listening on 8081");

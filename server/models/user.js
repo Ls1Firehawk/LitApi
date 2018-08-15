@@ -22,8 +22,7 @@ var UserSchema = mongoose.Schema({
 });
 
 //We create a variable accesible outside of this file. Variable will be a mongoose schema with added functions
-var User = module.exports = mongoose.model('User', UserSchema);
-
+var User =  module.exports = mongoose.model('user', UserSchema);
 
 module.exports.createLocalUser = function(newUser, callback){
   bcrypt.genSalt(10, function(err, salt) {
@@ -41,7 +40,6 @@ module.exports.createFacebookUser = function(newUser, callback){
 module.exports.createGoogleUser = function(newUser, callback){
   newUser.save(callback);
 }
-
 
 module.exports.createGoogleUser = function(newUser, callback){
   newUser.save(callback);
@@ -62,14 +60,12 @@ module.exports.getUserByGoogleId = function(id, callback){
   User.findOne(query, callback);
 }
 
-
 module.exports.getUserById = function(id, callback){
   var query = {_id: mongoose.mongo.ObjectId(id)}; 
   User.findOne(query, callback);
 }
 
 // Password stuff
-
 module.exports.comparePassword = function(candidatePassword, hash, callback){
   bcrypt.compare(candidatePassword, hash, function(err, isMatch){
     if(err) throw err;
