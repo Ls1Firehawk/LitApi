@@ -39,8 +39,8 @@ app.use('/test/register', function(req,res){
 })
 app.use('/test/login', function(req,res){
 	res.send("<form action='/auth/local/login' method='post'>" +
-		"<input type='text' name='username' value='usertest1'>" +
-		"<input type='password' name='password' value='passwordtest'>" +
+		"<input type='text' name='username' value='usertest'>" +
+		"<input type='password' name='password' value='passwordtestt'>" +
 		"<input type='submit' value='submit'>"
 		)
 });

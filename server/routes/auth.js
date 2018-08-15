@@ -23,45 +23,42 @@ passport.use('local',new LocalStrategy(
     User.getUserByLocalUsername(username, function(err,userfound){
       if(err)
         throw err;
-
       if(userfound == null) {
        return done(null, false, {message: "user does not exist"});
       }
-      
-      
-  
-    })
-
-
-    done(null, false);
-}));
-
-
-router.post('/local/logg123', function(req, res) {
-  passport.authenticate('local', function(err, user, info){
-    if (err) {
-      console.log(err);
-      return res.status(403).json({message: err});
-    }
-    if (!user) { 
-      return res.status(401).json(info);
-    }
-    req.logIn(user, function(err) {
-      if (err) {
-        console.log(err);
-        return res.status(403).json({message: err});
-      }
-      var payload = {id: user._id};
-      var token = jwt.sign(payload, APP_CONFIG.jwtSecret);  
-      return res.status(200).json({message: 'Auth successful', token: token});
+      User.comparePassword(password, userfound.local.password, function(err, matchTrue){
+        if(err){
+          console.log("Throwing error");
+          throw err;
+        }
+        if(matchTrue){
+          return done(null, userfound);
+        } else {
+          return done(null, false, {message: 'Error password'})
+        }
+      });
     });
-    })(req, res);
-});
+}));
 
 
 router.post('/local/login', function (req,res) {
   passport.authenticate('local', function(err, user, info){
-  res.redirect("/test/login");
+  
+    if(err) {
+      console.log(err);
+      return res.status(403).json({message: err});
+    }
+    if(!user)
+      return res.status(401).json(info);
+    req.logIn(user, function(err) {
+      if (err) {
+        console.log(err);
+        return res.status(403).json({message: err});
+        }
+        //implement token here (jwt)
+        console.log("LOGGED IN!!! YEHAAA")
+        res.redirect("/test/login")
+    });
   })(req,res);
 
 });
@@ -103,7 +100,7 @@ router.post("/local/register/",function(req,res) {
         message: 'Error with registration process, internal.'
       })
     }
-    console.log(user);
+    console.log(new_user);
     return res.status(200).json({
       message: 'Succesfull registration'
     })
