@@ -1,20 +1,30 @@
+var APP_CONFIG = require('../../app_config.js');
 var express = require('express')
 var router = express.Router();
 
-router.get('/getvenues/:x&:y&:radius&:other', function(req,res) {
-	googleapi_getvenues(req.params.x, req.params.y, req.params.radius, req.params.other, function (apiresult) {
+var jwt = require('jsonwebtoken');
+var passport = require('passport');
+var JwtStrategy = require("passport-jwt").Strategy;
+var ExtractJwt = require("passport-jwt").ExtractJwt;
+
+
+router.post('/getvenues/',passport.authenticate('jwt', { session: false }), function(req,res) {
+  
+	googleapi_getvenues(req.body.latitude, req.body.longitude, req.body.radius, function (apiresult) {
+    res.setHeader("content-type", "text/javascript")
 		res.status(200).json(cleanjson(apiresult))
 	})
 })
 
-var googleapi_getvenues = function(x, y, radius, other,callback){
-  var key = ""
-  var location = x + "," + y
+var googleapi_getvenues = function(lat, long,radius,callback){
+  var key = APP_CONFIG.google_places_api_key
+  var location = lat + "," + long
   var types = "bar";
   //bar, casino, night_club, restaurant
 
-  var https = require('https');
   var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" + "key=" + key + "&location=" + location + "&radius=" + radius + "&types=" + types
+  var https = require('https');
+
   https.get(url, function(response) {
     var body ='';
     response.on('data', function(chunk) {

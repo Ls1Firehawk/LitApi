@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<style>
+	body {
+		background-color: black;
+		}
+	</style>
+<form id="login_form">
+	<input type='text' name='username' value='jo'>
+	<input type='password' name='password' value='passwordtest'>
+	<input type='submit' value='submit'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var request;
+		$('#login_form').submit(function(event) {
+			event.preventDefault();
+			if (request) {
+				request.abort();
+			}
+
+			var $form = $(this);
+			var $inputs = $form.find("input, select, button, textarea");
+			var serialized = $form.serialize();
+			$inputs.prop("disabled", true);
+
+			request = $.ajax({
+				url: "/auth/local/login",
+				type: "post", 
+				data: serialized
+			});
+
+			request.done(function (response, text_status, jqXHR) {
+				localStorage.setItem("jwttoken", jqXHR.responseJSON.token)
+				console.log(jqXHR.responseJSON.token)
+			})
+
+			request.fail(function(jqXHR, text_status, error) {
+				console.error("Error "+ text_status, error);
+			})
+
+			request.always(function(){
+				$inputs.prop("disabled", false);
+			})
+		})
+	</script>
+</body>
+</html

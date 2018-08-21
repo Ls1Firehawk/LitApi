@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<style>
+	body {
+		background-color: black;
+		}
+	</style>
+		<form id="api_form">
+		<input type='text' name='latitude' value='45.427986'>
+		<input type='text' name='longitude' value='-75.7188742'>
+		<input type='text' name='radius' value='1500'>
+		<input type='submit' name='submit'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		
+		var request;
+		$('#api_form').submit(function(event) {
+			
+			event.preventDefault();
+			if (request) {
+				request.abort();
+			}
+
+			var $form = $(this);
+			var $inputs = $form.find("input, select, button, textarea");
+			var serialized = $form.serialize();
+			$inputs.prop("disabled", true);
+
+			request = $.ajax({
+				url: "/api/getvenues/",
+				type: "post", 
+				data: serialized,
+				beforeSend: function(xhr) {
+					console.log(localStorage.getItem("jwttoken"))
+					xhr.setRequestHeader("Authorization", "Bearer " + localStorage.getItem("jwttoken"))	
+				}
+			});
+
+			request.done(function (response, text_status, jqXHR) {
+				console.log(jqXHR)
+			})
+
+			request.fail(function(jqXHR, text_status, error) {
+				console.log(jqXHR)
+				console.error("Error "+ text_status, error);
+			})
+
+			request.always(function(){
+				$inputs.prop("disabled", false);
+			})
+		})
+	</script>
+</body>
+</html

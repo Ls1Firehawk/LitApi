@@ -18,7 +18,6 @@ var UserSchema = mongoose.Schema({
         id           : String,
         token        : String
     }
-
 });
 
 //We create a variable accesible outside of this file. Variable will be a mongoose schema with added functions
@@ -45,6 +44,11 @@ module.exports.createGoogleUser = function(newUser, callback){
   newUser.save(callback);
 }
 
+module.exports.getUserByEmail = function (email, callback) {
+  var query = {'email': email}
+  User.findOne(query, callback);
+}
+
 module.exports.getUserByLocalUsername = function(username, callback){
   var query = {'local.username': username}; 
   User.findOne(query, callback);
@@ -65,7 +69,6 @@ module.exports.getUserById = function(id, callback){
   User.findOne(query, callback);
 }
 
-// Password stuff
 module.exports.comparePassword = function(candidatePassword, hash, callback){
   bcrypt.compare(candidatePassword, hash, function(err, isMatch){
     if(err) throw err;

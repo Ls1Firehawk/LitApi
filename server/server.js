@@ -8,6 +8,7 @@ var passport = require('passport');
 var session = require('express-session');
 var auth_route = require('./routes/auth');
 var api_route = require('./routes/api');
+var path = require("path");
 
 // Retrieve
 
@@ -25,25 +26,29 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(expressValidator());
 
-
 app.use('/auth', auth_route);
 app.use('/api', api_route);
 app.use('/test/register', function(req,res){
 	res.send("<form action='/auth/local/register' method='post'>" +
-		"<input type='text' name='email' value='jonannana@email.com'>" +
-		"<input type='text' name='username' value='usertest'>" +
+		"<input type='text' name='email' value='jon@email.com'>" +
+		"<input type='text' name='username' value='jo'>" +
 		"<input type='password' name='password' value='passwordtest'>" +
 		"<input type='password' name='confirmPassword' value='passwordtest'>" +
 		"<input type='submit' value='submit'>" +
 		"</form>");
 })
 app.use('/test/login', function(req,res){
-	res.send("<form action='/auth/local/login' method='post'>" +
-		"<input type='text' name='username' value='usertest'>" +
-		"<input type='password' name='password' value='passwordtestt'>" +
+	res.sendFile(path.join(__dirname+"/login.html"));
+	/*res.send("<form action='/auth/local/login' method='post'>" +
+		"<input type='text' name='username' value='jo'>" +
+		"<input type='password' name='password' value='passwordtest'>" +
 		"<input type='submit' value='submit'>"
-		)
+		);*/
 });
+
+app.use('/test/api', function(req,res) {
+	res.sendFile(path.join(__dirname+"/callapi.html"));
+})
 
 app.listen(8081, function(){
   console.log("Listening on 8081");
