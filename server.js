@@ -15,7 +15,8 @@ var path = require("path");
 // Connect to the db
 mongoose.connect("mongodb://localhost:27017/authtest")
 var db = mongoose.connection;
-
+//
+//
 
 const app = new Express();
 
@@ -37,8 +38,21 @@ app.use('/test/register', function(req,res){
 		"<input type='submit' value='submit'>" +
 		"</form>");
 })
+
+
+app.use('/yes', function(req,res){
+	res.sendFile(path.join(__dirname+"/test/yes.html"));
+})
+app.use('/no', function(req, res){
+	res.send('Login not accepted');
+})
+
+app.get('/facebook/success', function(req, res) {
+  res.sendFile(path.join(__dirname+"/test/storeSuccessFacebook.html"))
+})
+
 app.use('/test/login', function(req,res){
-	res.sendFile(path.join(__dirname+"/login.html"));
+	res.sendFile(path.join(__dirname+"/test/login.html"));
 	/*res.send("<form action='/auth/local/login' method='post'>" +
 		"<input type='text' name='username' value='jo'>" +
 		"<input type='password' name='password' value='passwordtest'>" +
@@ -46,8 +60,12 @@ app.use('/test/login', function(req,res){
 		);*/
 });
 
+app.use('/test/facebook', function(req,res){
+	res.sendFile(path.join(__dirname+"/test/facebook.html"));
+})
+
 app.use('/test/api', function(req,res) {
-	res.sendFile(path.join(__dirname+"/callapi.html"));
+	res.sendFile(path.join(__dirname+"/test/callapi.html"));
 })
 
 app.listen(8081, function(){

@@ -1,10 +1,11 @@
-var APP_CONFIG = require('../../app_config.js');
+var APP_CONFIG = require('../app_config.js');
 var express = require('express');
 var request = require('superagent');
 var passport = require('passport');
 var jwt = require('jsonwebtoken');
 var LocalStrategy = require('passport-local').Strategy;
 var JwtStrategy = require("passport-jwt").Strategy;
+var FacebookStrategy = require('passport-facebook').Strategy;
 var ExtractJwt = require("passport-jwt").ExtractJwt;
 var router = express.Router();
 var User = require('../models/user');
@@ -20,6 +21,7 @@ passport.deserializeUser(function(id, done){
     done(err, user);
   });
 });
+
 
 passport.use('jwt', new JwtStrategy(
 {
@@ -66,6 +68,53 @@ passport.use('local',new LocalStrategy(
    });
   }));
 
+passport.use(new FacebookStrategy({
+    clientID: APP_CONFIG.facebook_id,
+    clientSecret: APP_CONFIG.facebook_pass,
+    callbackURL: "http://localhost:8081/auth/facebook/callback"
+  }, function(accessToken, refreshToken, profile, done) {
+      console.log("profile id : " + profile.id)
+      User.getUserByFacebookId( profile.id, function (err, user) {
+        console.log("saved id : " + user._id)
+        if(err) {
+          console.log("error: " + error);
+          return done(error, false);
+                }
+      if(user){
+        return done(null, user);
+      } else {
+        var new_user = new User();
+
+        new_user.facebook.id = profile.id,
+        new_user.facebook.token = accessToken,
+        new_user.facebook.name = profile.displayName,
+        new_user.email = profile.emails[0].value
+        
+        User.createFacebookUser(new_user, function(err, user){
+          if(err)
+            throw err
+          else
+            return done(err, user);
+      })    
+    };
+  })
+}))
+
+router.get('/login/facebook', passport.authenticate('facebook', { 
+      scope : ['public_profile', 'email']
+    }));
+
+router.get('/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/no' }),
+  function(req, res) {
+    //got the user id here
+    //https://stackoverflow.com/questions/19035373/how-do-i-redirect-in-expressjs-while-passing-some-context
+    var payload = {id: req.user._id};
+    var token = jwt.sign(payload, APP_CONFIG.jwtSecret, {expiresIn: '300s'});  
+      //return res.status(200).json({message: 'User has been authorized', token: token});
+      console.log(encodeURIComponent(token))
+    res.redirect('/facebook/success/?jwttoken=' + encodeURIComponent(token));
+  });
+
 router.post('/local/login', function (req,res) {
   passport.authenticate('local', function(err, user, info){
 
@@ -82,8 +131,7 @@ router.post('/local/login', function (req,res) {
         return res.status(403).json({message: err});
       }
       var payload = {id: user._id};
-      console.log(payload);
-      var token = jwt.sign(payload, APP_CONFIG.jwtSecret);  
+      var token = jwt.sign(payload, APP_CONFIG.jwtSecret, {expiresIn: '300s'});  
       return res.status(200).json({message: 'User has been authorized', token: token});
     });
   })(req,res);

@@ -1,4 +1,4 @@
-var APP_CONFIG = require('../../app_config.js');
+var APP_CONFIG = require('../app_config.js');
 var express = require('express')
 var router = express.Router();
 
@@ -9,7 +9,6 @@ var ExtractJwt = require("passport-jwt").ExtractJwt;
 
 
 router.post('/getvenues/',passport.authenticate('jwt', { session: false }), function(req,res) {
-  
 	googleapi_getvenues(req.body.latitude, req.body.longitude, req.body.radius, function (apiresult) {
     res.setHeader("content-type", "text/javascript")
 		res.status(200).json(cleanjson(apiresult))

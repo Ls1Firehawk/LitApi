@@ -12,7 +12,8 @@ var UserSchema = mongoose.Schema({
     },
     facebook         : {
         id           : String,
-        token        : String
+        token        : String,
+        name         : String
     },
     google           : {
         id           : String,
