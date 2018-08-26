@@ -74,3 +74,4 @@ typings/
 
 #other
 app_config.js
+travis-ci-lit-serviceaccount.json

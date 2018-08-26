@@ -1,5 +1,5 @@
 language: node_js
-node_js: "nodejs"
+node_js: nodejs
 dist: trusty
 deploy:
   provider: gae
