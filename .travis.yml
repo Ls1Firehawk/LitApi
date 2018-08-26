@@ -3,7 +3,7 @@ node_js: "nodejs"
 dist: trusty
 deploy:
   provider: gae
-  keyfile: YOUR SERVICE ACCOUNT JSON FILE
+  keyfile: travis-ci-lit-serviceaccount.json
   project: lit-projectunicorn
 before_install:
 - openssl aes-256-cbc -K $encrypted_3d20bc5e964b_key -iv $encrypted_3d20bc5e964b_iv
