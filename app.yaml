@@ -1,4 +1,4 @@
-service: lit-api
+service: default
 runtime: nodejs8
 instance_class: B1
 basic_scaling:
