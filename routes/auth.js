@@ -6,6 +6,7 @@ var jwt = require('jsonwebtoken');
 var LocalStrategy = require('passport-local').Strategy;
 var JwtStrategy = require("passport-jwt").Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy;
+var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 var ExtractJwt = require("passport-jwt").ExtractJwt;
 var router = express.Router();
 var User = require('../models/user');
@@ -21,6 +22,18 @@ passport.deserializeUser(function(id, done){
     done(err, user);
   });
 });
+
+function extractProfile (profile) {
+  let imageUrl = '';
+  if (profile.photos && profile.photos.length) {
+    imageUrl = profile.photos[0].value;
+  }
+  return {
+    id: profile.id,
+    displayName: profile.displayName,
+    image: imageUrl
+  };
+}
 
 
 passport.use('jwt', new JwtStrategy(
@@ -68,41 +81,94 @@ passport.use('local',new LocalStrategy(
    });
   }));
 
-passport.use(new FacebookStrategy({
-    clientID: APP_CONFIG.facebook_id,
-    clientSecret: APP_CONFIG.facebook_pass,
-    callbackURL: "http://localhost:8081/auth/facebook/callback"
-  }, function(accessToken, refreshToken, profile, done) {
-      console.log("profile id : " + profile.id)
-      User.getUserByFacebookId( profile.id, function (err, user) {
-        console.log("saved id : " + user._id)
-        if(err) {
-          console.log("error: " + error);
-          return done(error, false);
-                }
-      if(user){
-        return done(null, user);
-      } else {
-        var new_user = new User();
+passport.use(new GoogleStrategy({
+  clientID: APP_CONFIG.google_client_id,
+  clientSecret: APP_CONFIG.google_client_secret,
+  callbackURL: APP_CONFIG.google_callback,
+  accessType: 'offline'
+}, (accessToken, refreshToken, profile, done) => {
+      User.getUserByGoogleId( profile.id, function (err, user) {
+      if(err) {
+        console.log("error: " + error);
+        return done(error, false);
+      }
+    if(user){
+      console.log("saved id : " + user._id)
+      return done(null, user);
+    } else {
+      var new_user = new User();
+      new_user.google.id = profile.id,
+      new_user.email = profile.emails[0].value
+      new_user.reg_source = "google"
+      new_user.google.token = accessToken,
 
-        new_user.facebook.id = profile.id,
-        new_user.facebook.token = accessToken,
-        new_user.facebook.name = profile.displayName,
-        new_user.email = profile.emails[0].value
-        
-        User.createFacebookUser(new_user, function(err, user){
-          if(err)
-            throw err
-          else
-            return done(err, user);
+      User.createGoogleUser(new_user, function(err, user){
+        if(err)
+          throw err
+        else
+          return done(err, user);
+      })    
+    };
+  })
+}))
+
+router.get('/login/google',
+  (req, res, next) => {
+    if (req.query.return) {
+      req.session.oauth2return = req.query.return;
+    }
+    next();
+  },
+  passport.authenticate('google', { scope: ['email', 'profile'] })
+  );
+
+router.get('/google/callback',
+  passport.authenticate('google'),
+  (req, res) => {
+    delete req.session.oauth2return;
+    console.log(req.user._id)
+    var payload = {id: req.user._id};
+    var token = jwt.sign(payload, APP_CONFIG.jwtSecret, {expiresIn: '300s'});
+    
+    res.redirect('/google/success/?jwttoken=' + encodeURIComponent(token));
+  }
+  );
+
+passport.use(new FacebookStrategy({
+  clientID: APP_CONFIG.facebook_id,
+  clientSecret: APP_CONFIG.facebook_pass,
+  callbackURL: "http://localhost:8081/auth/facebook/callback"
+}, function(accessToken, refreshToken, profile, done) {
+  console.log("profile id : " + profile.id)
+  User.getUserByFacebookId( profile.id, function (err, user) {
+    console.log("saved id : " + user._id)
+    if(err) {
+      console.log("error: " + error);
+      return done(error, false);
+    }
+    if(user){
+      return done(null, user);
+    } else {
+      var new_user = new User();
+
+      new_user.facebook.id = profile.id,
+      new_user.facebook.token = accessToken,
+      new_user.facebook.name = profile.displayName,
+      new_user.email = profile.emails[0].value
+
+      User.createFacebookUser(new_user, function(err, user){
+        if(err)
+          throw err
+        else
+          return done(err, user);
       })    
     };
   })
 }))
 
 router.get('/login/facebook', passport.authenticate('facebook', { 
-      scope : ['public_profile', 'email']
-    }));
+  scope : ['public_profile', 'email']
+}));
 
 router.get('/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/no' }),
   function(req, res) {
@@ -112,8 +178,8 @@ router.get('/facebook/callback', passport.authenticate('facebook', { failureRedi
     var token = jwt.sign(payload, APP_CONFIG.jwtSecret, {expiresIn: '300s'});  
       //return res.status(200).json({message: 'User has been authorized', token: token});
       console.log(encodeURIComponent(token))
-    res.redirect('/facebook/success/?jwttoken=' + encodeURIComponent(token));
-  });
+      res.redirect('/facebook/success/?jwttoken=' + encodeURIComponent(token));
+    });
 
 router.post('/local/login', function (req,res) {
   passport.authenticate('local', function(err, user, info){
@@ -170,9 +236,9 @@ router.post("/local/register/",function(req,res) {
         console.log(name_user)
         console.log(email_user)
         if(name_user || email_user) {
-            return res.status(401).json({message: "username / email already in use"});
-         }
-         try {
+          return res.status(401).json({message: "username / email already in use"});
+        }
+        try {
           User.createLocalUser(new_user, function(err,user) {
             if(err)
               throw err;
