@@ -40,11 +40,13 @@ app.use('/test/register', function(req,res){
 })
 
 
-app.use('/yes', function(req,res){
-	res.sendFile(path.join(__dirname+"/test/yes.html"));
-})
-app.use('/no', function(req, res){
-	res.send('Login not accepted');
+app.get('/', function(req, res) {
+	res.sendFile(path.join(__dirname+"/test/testmenu.html"))
+}) 
+
+
+app.get('/google/success', function(req,res){
+	res.sendFile(path.join(__dirname+"/test/storeSuccessGoogle.html"))
 })
 
 app.get('/facebook/success', function(req, res) {
@@ -59,13 +61,14 @@ app.use('/test/login', function(req,res){
 		"<input type='submit' value='submit'>"
 		);*/
 });
-
 app.use('/test/facebook', function(req,res){
 	res.sendFile(path.join(__dirname+"/test/facebook.html"));
-})
-
+});
 app.use('/test/api', function(req,res) {
 	res.sendFile(path.join(__dirname+"/test/callapi.html"));
+});
+app.use('/test/google', function(req,res){
+	res.send('<a href="/auth/login/google">Sign In with Google</a>')
 })
 
 app.listen(8081, function(){
